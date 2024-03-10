@@ -1,10 +1,10 @@
 import React from 'react';
-import Example from '../../../client/components/Example';
+import YouTube from '../../../client/components/YouTube';
+import { YouTubeEvent } from '../create/youtubeEvent';
 
-const HomePage = () => {
-	return (
-			<Example />
-	);
+
+const page: React.FC = () => {
+	return <YouTube movieID='6S09bDbVdlY' events={YouTubeEvent} />;
 };
 
-export default HomePage;
+export default page;
