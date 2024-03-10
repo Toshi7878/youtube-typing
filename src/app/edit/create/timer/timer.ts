@@ -1,4 +1,4 @@
-import { youTube } from '../page';
+import { youTube } from '../youtube/youtube';
 
 
 class Timer {

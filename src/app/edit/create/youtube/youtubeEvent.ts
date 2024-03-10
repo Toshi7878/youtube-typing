@@ -1,5 +1,5 @@
 import { Ticker } from "@createjs/core";
-import { timer } from "../create/timer/timer"
+import { timer } from "../timer/timer"
 
 
 const ticker = new Ticker();

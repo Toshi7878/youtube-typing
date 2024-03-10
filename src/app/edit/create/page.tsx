@@ -1,10 +1,7 @@
 'use client'
 
 import React, { createContext } from "react";
-import YouTube from '../../../client/components/YouTube';
-import { YouTubeEvent } from './youtubeEvent';
-const youTubeEvent = new YouTubeEvent();
-export const youTube = new YouTube({ movieID: '6S09bDbVdlY', events: youTubeEvent });
+import { youTube } from "./youtube/youtube"
 
 
 const page = () => {
