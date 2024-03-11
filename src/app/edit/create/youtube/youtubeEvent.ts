@@ -1,21 +1,24 @@
-import { Ticker } from "@createjs/core";
+import { Ticker } from '@pixi/ticker';
 import { timer } from "../timer/timer"
 
 
 const ticker = new Ticker();
-ticker.timingMode = ticker.RAF;
+ticker.add(timer.update);
+
 export class YouTubeEvent {
 	play() {
 		console.log('play')
-		ticker.addEventListener("tick", timer.update);
+		ticker.start();
 	}
 
 	pause() {
 		console.log('pause')
+		ticker.stop();
 	}
 
 	end() {
 		console.log('end')
+		ticker.stop();
 	}
 
 	seek() {
