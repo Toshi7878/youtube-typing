@@ -12,6 +12,9 @@ interface YouTubeEvent {
 type YouTubeProps = {
 	movieID: string;
 	events: YouTubeEvent;
+	width: string;
+	height: string;
+
 };
 
 class YouTube extends React.Component<YouTubeProps> {
@@ -40,6 +43,8 @@ class YouTube extends React.Component<YouTubeProps> {
 						},
 					},
 				}}
+				width={this.props.width}
+				height={this.props.height}
 				onPlay={this.eventInstance.play}
 				onPause={this.eventInstance.pause}
 				onEnded={this.eventInstance.end}

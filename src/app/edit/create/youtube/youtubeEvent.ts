@@ -27,5 +27,6 @@ export class YouTubeEvent {
 
 	ready() {
 		console.log('ready')
+		
 	}
 }
